@@ -1,0 +1,96 @@
+
+.box img{
+   width: 400px;
+   height: 450px;
+}
+.bi-arrows-fullscreen{
+   cursor: pointer;
+   display: block;
+   margin: 0 auto;
+}
+.bi-arrows-fullscreen:hover{
+   transform: scale(1.2);
+}
+.thumbnail{
+   float: left;
+}
+.img-thumbnail{
+   width:120px;
+   height: 130px;
+   cursor: pointer;
+}
+.size{
+   text-align: left;
+}
+.size h5{
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(94, 90, 90);
+   margin: 20px 0;
+}
+.size p{
+   font-size: 14px;
+   color: rgb(54, 53, 53);
+}
+.size span{
+   font-size:18px;
+   font-weight: bold;
+   color: #000;
+   margin: 25px 0;
+   display: block; 
+}
+.size >.btn{
+   width:40px;
+   height:35px;
+   margin-left: 5px;
+   color: #000;
+   background-color: #fff;
+   border: 1px solid #000;
+   font-weight: bold;
+}
+.S{
+   margin-left:0 !important;
+}
+.size > .btn{
+   border-radius: 0;
+}
+.size  .btn:hover{
+   color: #fff;
+   background-color: #000;
+}
+.input-group{
+   margin-top: 20px;
+   display: block;
+}
+.input-group > button{
+   width: 25px;
+   height: 25px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+}
+.sl{
+   width: 60px ;
+   height: 25px;
+   text-align: center;
+   border: none;
+   border-top: 1px solid #ccc;
+   border-bottom: 1px solid #ccc;
+}
+.btn-mua{
+   border: 1px solid #000;
+   display: block;
+   width: 200px;
+   height: 40px;
+   margin-bottom: 5px;
+   background-color: #fff;
+   color: black;
+   font-weight: bold;
+}
+.mua{
+   background-color: #000;
+   color: #fff;
+}
+.size-t-shirt{
+   width: 400px;
+}
+

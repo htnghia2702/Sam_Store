@@ -1,0 +1,283 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+   overflow-x:hidden ;
+}
+.load{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10000000000000000;
+    display: block;
+    opacity:hidden;
+}
+.loader{
+    margin: 0 0 2em;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top:35%;
+    right: 41%;
+  }
+  
+  /*
+    Set the color of the icon
+  */
+ .load .loader svg path,
+  svg rect{
+    fill: #000000;
+  }
+.header_top{
+    height: 20px;
+    float: left;
+    background-color: white;
+}
+.header_top  a{
+    font-size: 15px;
+    color: black;
+    display:inline-block;
+    text-decoration: none;
+    margin-left: 50px;
+    
+}
+.header_top  a:visited{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+}
+.header_top  a:hover{
+    color: blue;
+}
+.header_top p{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    margin: 0 25px;
+}
+.header_top .earth{
+    width: 15px !important;
+    height:  15px !important;
+}
+.header_top img {
+    width: 25px;
+    height: 15px;
+    float: right;
+    margin:  2.5px 5px;
+}
+#langue{
+    float: right;
+    margin: 0px 0;
+    font-size: 15px;
+    border: none;
+    margin-right: 50px;
+}
+.logo{
+    height: 100px;
+}
+.header_bottom{
+    height: 105px;
+    width: 100%;
+    background-color: black;
+    float: left;
+}
+.header_bottom .search{
+    margin-top: 30px;
+    float: right;
+    display: inline-block;
+    margin-right: 100px;
+}
+.header_bottom .search .bi{
+    margin-top: 1px;
+    color: rgb(255, 255, 255) !important;
+    width: 20px;
+    height: 21px;
+}
+.header_bottom button{
+    border: none;
+    background-color: black;
+    width: 40px;
+    height: 30px;
+}
+.header_bottom button:visited{
+    border: none;
+    background-color: black;
+}
+.header_bottom button:hover {
+    background-color: rgb(165, 72, 72);
+}
+.header_bottom .cart{
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.header_bottom .cart a{
+    color: rgb(0, 0, 0);
+}
+.header_bottom .cart a:hover svg{
+    transform: scale(1.2,1.2);
+}
+.header_bottom .cart p{
+    display: inline-block;
+}
+.menu{
+    width: 15%;
+    height: 588px;
+    float: left;
+    border-right: 2px solid #ccc;
+    display: block;
+    position: fixed;
+    left:0;
+    top:125px
+}
+.menu ul{
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+.menu ul a li{
+    list-style-type: none;
+    padding: 10px 0;
+    padding-left: 40px;
+    transition: all 0.1s linear;
+    
+}
+
+.menu ul a{
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.menu ul a:visited li{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.menu ul a:hover li{
+    background-color: #000;
+    color: white;
+}
+
+.menu .contact {
+    position: absolute;
+    bottom: 50px;
+    left:10px;
+}
+.menu .contact a{
+    text-decoration: none;
+    color: white;
+}
+.menu .contact a:hover svg {
+    transform: scale(1.1,1.1);
+}
+.menu p{
+    font-family: Comic Sans MS,Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom:5px;
+}
+.content{
+    width: 85%;
+    float: left;
+    position: absolute;
+    top:125px;
+    right: 0;
+}
+.nav-mobie{
+    margin: 5.5% 0;
+    width: 50px;
+    height: 40px;
+    color: rgb(255, 255, 255) ;
+    float: left;
+    display: none;
+}
+.search-mobie{
+    display: none;
+}
+.cart-mobie{
+    display: none;
+}
+/* Mobie: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    body{
+        width: 100%;
+    }
+    .header_bottom{
+        width: 100%;
+    }
+    .header_top{
+        display: none;
+    }
+    .nav-mobie{
+        display: block;        
+    }
+    .header_bottom img{
+        width: 50%;
+        height: 50%;
+        margin: 20px 0 0 30px;
+        float: left;
+    }
+    .header_bottom .cart{
+        display: none;
+    }
+    
+    .header_bottom .search{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .search-mobie{
+        display: block;
+        float: left;
+        color: white;
+    }
+    .cart-mobie{
+        display: block;
+        color: white;
+        width: 20px;
+        height: 20px;
+        float: left;
+    }
+    .content{
+        width: 100%;
+    }
+    .card-img-top{
+        margin: 0;
+    }
+    .the-journal{
+        display: none;
+    }
+    .footer{
+        width: 100%;
+        margin: 0;
+    }
+    .main_warp{
+        width: 100%;
+    }
+}
+/* tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .nav-mobie{
+        display: block;
+        margin: 3% 0;
+
+    }
+}
+/* pc: width >= 1024px */
+@media only screen and (min-width: 64em) {
+    
+}
